@@ -10,7 +10,8 @@ main = do
   let unpackCoords = (\((x1 : y1 : xs1) : (x2 : y2 : xs2) : xs) -> ((x1, y1), (x2, y2)))
   let linesInput = fmap (unpackCoords . fmap (fmap (\i -> read i :: Int) . splitOn ",") . splitOn " -> ") . lines $ file
 
-  let lineMap = foldl markMap (replicate 1000 . replicate 1000 $ '.') linesInput
+  let lineMap = foldl markMap (replicate 1000 . replicate 1000 $ '.') $ take 250 linesInput
+  let lineMap' = foldl markMap lineMap $ drop 250 linesInput
 
   print $ length . filter (\c -> c /= '.' && c /= '1' && c /= '\n') $ unlines lineMap
 
