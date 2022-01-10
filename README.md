@@ -13,6 +13,7 @@ This is my solution to aoc of 2021 with Haskell
   - [Day 4](#day-4)
   - [Day 5](#day-5)
   - [Day 6](#day-6)
+  - [Day 7](#day-7)
 
 ## How to run
 
@@ -63,5 +64,12 @@ $ ghc <Day>.hs; ./<Day> input
 
 ![[Day 6](Day6/6.hs)](Day6/aoc_day6.png)
 ![[Day 6 - Part 2](Day6/6-2.hs)](Day6/aoc_day6-2.png)
+
+---
+
+## Day 7
+
+![[Day 7](Day7/7.hs)](Day7/aoc_day7.png)
+![[Day 7 - Part 2](Day7/7-2.hs)](Day7/aoc_day7-2.png)
 
 ---
