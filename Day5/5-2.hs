@@ -17,7 +17,7 @@ parseLinesInput :: String -> [((Int, Int), (Int, Int))]
 parseLinesInput = fmap (unpackCoords . splitCoords . splitOn " -> ") . lines
   where
     strToInt i = read i :: Int
-    splitCoords = fmap (fmap strToInt . splitOn ",")
+    splitCoords = fmap (fmap read . splitOn ",")
     unpackCoords = \((x1 : y1 : xs1) : (x2 : y2 : xs2) : xs) -> ((x1, y1), (x2, y2))
 
 markMap :: [String] -> ((Int, Int), (Int, Int)) -> [String]
