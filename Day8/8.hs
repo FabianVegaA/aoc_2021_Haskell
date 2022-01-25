@@ -1,5 +1,5 @@
 import Data.List.Split (splitOn)
-import System.Directory.Internal.Prelude ( getArgs )
+import System.Directory.Internal.Prelude (getArgs)
 
 main :: IO ()
 main = do
